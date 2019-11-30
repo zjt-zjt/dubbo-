@@ -1,0 +1,28 @@
+server:
+    port: 8083
+spring:
+    datasource:
+        username: root
+        password: zjtzjy137381
+        url: jdbc:mysql://localhost:3306/taotao?characterEncoding=utf8&serverTimezone=UTC&useSSL=true
+        driver-class-name: com.mysql.jdbc.Driver
+    mvc:
+        servlet:
+            path: /search/
+    data:
+        solr:
+            host: http://152.136.119.210:8983/solr/taotao
+#            host: http://49.233.175.248:8983/solr/taotao
+            batch_size: 500
+
+
+#logging:
+#    level:
+#    root: info
+#    com.taotao.mapper: debug
+mybatis:
+    type-aliases-package: com.taotao.pojo
+    mapper-locations: classpath:/mappers/*.xml
+    configuration:
+        # 开启mybatis数据库字段自动映射成小驼峰
+        map-underscore-to-camel-case: true
