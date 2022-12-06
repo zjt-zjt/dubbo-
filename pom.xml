@@ -40,7 +40,7 @@
         <druid.version>1.1.10</druid.version>
         <httpclient.version>4.5.6</httpclient.version>
         <joda-time.version>2.9.9</joda-time.version>
-        <commons-net.version>3.3</commons-net.version>
+        <commons-net.version>3.9.0</commons-net.version>
 
     </properties>
     <dependencyManagement>
